@@ -1,0 +1,117 @@
+/* =====================
+        GOOGLE FONTS
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap');
+
+/* =====================
+        GOOGLE FONTS
+========================= */
+
+/* =====================
+        Universal
+========================= */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    --primary-background-color: rgba(224, 44, 109, 1);
+    --primary-text-color: rgba(58, 58, 58, 1);
+
+
+}
+body {
+    font-family: 'Poppins';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.primary-btn {
+    display: inline-block;
+    margin-top: 16px;
+    background-color: var(--primary-background-color);
+    padding: 10px 24px;
+    color: white;
+    border-radius: 41px;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.primary-btn:hover{
+    background-color: rgb(246, 100, 124);
+    transition: background-color .1s linear;
+}
+/* =====================
+        Universal
+========================= */
+
+/* =====================
+        header
+========================= */
+
+header {
+    color: var(--primary-text-color);
+    
+}
+/* Nav Design */
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.navigation {
+    display: flex;
+}
+header > nav > ul > li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px 15px;
+
+}
+.link-btn {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+/* Nav Design */
+
+/* Banner Design */
+.banner {
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+.banner-left > h1 {
+    font-size: 52px;
+}
+.banner-right > img {
+    width: 100%;
+}
+.icon-arrow {
+    margin-left: 8px;
+}
+/* Banner Design */
+/* =====================
+        header
+========================= */
+/* =====================
+        mobile
+========================= */
+@media (max-width:1150px) {
+    /* banner design */
+    .banner {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    .banner-left{
+        order: 2;
+    }
+}
+/* =====================
+        mobile
+========================= */
