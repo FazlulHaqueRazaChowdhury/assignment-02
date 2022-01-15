@@ -100,11 +100,14 @@ header > nav > ul > li {
     background-size: cover;
     width: 475px;
     height: 475px;
+    overflow: hidden;
 }
+
 .banner-right > img {
     display: block;
     margin: auto;
     width: 440px;
+   
     
 }
 .banner-right > img:hover{
