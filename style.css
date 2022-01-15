@@ -351,9 +351,7 @@ color: orange;
         font-size: 14px !important;
     }
         /*header design*/
-        header {
-            height: 100vh;
-        }
+       
         
         header >nav {
             justify-content: center;
