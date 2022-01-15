@@ -343,7 +343,7 @@ color: orange;
         
         header >nav {
             justify-content: center;
-            height: 25px;
+            height: auto;
         }
         
         .banner {
