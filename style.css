@@ -105,6 +105,23 @@ header > nav > ul > li {
     display: block;
     margin: auto;
     width: 440px;
+    
+}
+.banner-right > img:hover{
+    animation-name: increase;
+    animation-duration: .3s;
+    
+    animation-timing-function: linear;
+    animation-fill-mode: forwards
+}
+@keyframes increase {
+  
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform:scale(1.2);
+    }
 }
 .icon-arrow {
     margin-left: 8px;
