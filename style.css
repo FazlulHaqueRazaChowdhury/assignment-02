@@ -62,7 +62,7 @@ header > nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 50px;
 }
 .navigation {
     display: flex;
@@ -264,11 +264,17 @@ color: orange;
     *{
         overflow-x: hidden;
     }
-    
+    /* nav design */
+    nav {
+        height: auto;
+        overflow: hidden;
+    }
+    /* nav design */
     /* banner design */
     .banner {
         text-align: center;
         grid-template-columns: 1fr;
+        overflow: hidden;
 
     }
     .banner-right {
