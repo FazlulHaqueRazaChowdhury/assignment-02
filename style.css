@@ -52,10 +52,11 @@ body {
 ========================= */
 
 header {
+
     color: var(--primary-text-color);
     height: 100vh;
     overflow: hidden;
-    
+    align-items: center;
 }
 /* Nav Design */
 header > nav {
@@ -278,7 +279,7 @@ color: orange;
         text-align: center;
         grid-template-columns: 1fr;
         overflow: hidden;
-        height: 100%;
+        height: 100vh;
 
     }
     .banner-right {
@@ -375,7 +376,7 @@ color: orange;
         }
         .banner-right > img {
 
-            width: 202px;
+            width: 300px;
         }
         /*banner design*/
          /* collection design */
