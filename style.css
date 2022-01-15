@@ -53,6 +53,7 @@ body {
 
 header {
     color: var(--primary-text-color);
+    height: 100vh;
     
 }
 /* Nav Design */
@@ -89,8 +90,18 @@ header > nav > ul > li {
 .banner-left > h1 {
     font-size: 52px;
 }
+.banner-right{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 475px;
+    height: 475px;
+}
 .banner-right > img {
-    width: 100%;
+    display: block;
+    margin: auto;
+    width: 440px;
 }
 .icon-arrow {
     margin-left: 8px;
@@ -100,18 +111,78 @@ header > nav > ul > li {
         header
 ========================= */
 /* =====================
-        mobile
+        main
+========================= */
+/*Sponsors*/
+
+.sponsor-logos{
+    margin-top: 100px;
+    box-shadow: 
+        inset 0px 11px 8px -10px #CCC,
+        inset 0px -11px 8px -10px #CCC;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+    height: 110px;
+    padding: 10px;
+}
+/*Sponsors*/
+
+/* Collection */
+#collection {
+    margin-top: 100px;
+    color: var(--primary-text-color);
+}
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.cards {
+    margin-top: 30px;
+
+}
+/* Collection */
+/* =====================
+        main
+========================= */
+
+/* =====================
+   1150px is Breakpoint
 ========================= */
 @media (max-width:1150px) {
+    
     /* banner design */
     .banner {
         text-align: center;
         grid-template-columns: 1fr;
+
+    }
+    .banner-right {
+        margin: 0 auto;
+        width: 257px;
+        height: 257px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-right > img {
+
+        width: 202px;
     }
     .banner-left{
         order: 2;
     }
+    /*banner design*/
+    /*sponsor design*/
+    .sponsor-logos{
+        grid-template-columns: repeat(4,0.5fr);
+        
+     
+    }
+    
 }
+    /* banner design */
 /* =====================
-        mobile
+  1150px is Breakpoint
 ========================= */
