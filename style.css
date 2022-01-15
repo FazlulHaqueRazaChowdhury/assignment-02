@@ -264,6 +264,9 @@ color: orange;
     *{
         overflow-x: hidden;
     }
+    header {
+        height: 100%;
+    }
     /* nav design */
     nav {
         height: auto;
@@ -275,6 +278,7 @@ color: orange;
         text-align: center;
         grid-template-columns: 1fr;
         overflow: hidden;
+        height: 100%;
 
     }
     .banner-right {
@@ -282,6 +286,7 @@ color: orange;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
    
     .banner-left{
