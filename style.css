@@ -54,6 +54,7 @@ body {
 header {
     color: var(--primary-text-color);
     height: 100vh;
+    overflow: hidden;
     
 }
 /* Nav Design */
