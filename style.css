@@ -138,9 +138,52 @@ header > nav > ul > li {
     font-weight: 600;
     text-align: center;
 }
-.cards {
-    margin-top: 30px;
 
+.cards {
+
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+.card {
+    width: 330px;
+    background-color: #fff;
+    padding: 17px 14px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.image-part > img {
+    width: 300px;
+    height: 256px;
+}
+.star {
+    padding-top: 20px;
+}
+.filled{
+color: orange;
+}
+.headign {
+    font-size: 28px;
+}
+.price{
+    font-size: 24px;
+}
+.details {
+    font-size: 14px;
+    max-width: 190px;
+}
+.see-more {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1150px;
+}
+.see-more a {
+    text-decoration: none;
+    color:  rgba(224, 44, 109, 0.87);
+    
 }
 /* Collection */
 /* =====================
@@ -174,15 +217,37 @@ header > nav > ul > li {
         order: 2;
     }
     /*banner design*/
-    /*sponsor design*/
+    
     .sponsor-logos{
         grid-template-columns: repeat(4,0.5fr);
         
      
     }
+    /*sponsor design*/
+     /* collection design */
+     .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* collection design */
     
 }
-    /* banner design */
+    
+   
 /* =====================
   1150px is Breakpoint
+========================= */
+/* =====================
+  mobile phones
+========================= */
+@media (max-width:800px) {
+         /* collection design */
+ 
+         .cards {
+            grid-template-columns: repeat(1,1fr);
+        }
+        /* collection design */
+    
+}
+/* =====================
+  mobile phones
 ========================= */
