@@ -130,6 +130,7 @@ header > nav > ul > li {
 .sponsor-logos >img {
     margin:0px 20px;
     max-width: 100px;
+    min-width: 50px;
     flex: 0 0 calc(20% - 40px);
 }
 /*Sponsors*/
